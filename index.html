@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>農林水産業 AI活用ガイドライン | 農林水産業AI活用ガイドライン</title>
+<meta name="description" content="中小事業者のための農林水産業AI活用ガイドライン(統合サマリー版)。基本原則・先進事例・導入ステップ・補助金情報を掲載。">
+<style>
+:root{--maxw:960px;font-size:16px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic UI","Meiryo",system-ui,sans-serif;
+ color:#26302b;background:#fafaf7;line-height:1.85;-webkit-text-size-adjust:100%}
+a{color:var(--ac);text-decoration:none}
+a:hover{text-decoration:underline}
+header.site{background:var(--acd);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.nav-inner{max-width:var(--maxw);margin:0 auto;padding:.55rem 1rem;display:flex;flex-wrap:wrap;align-items:center;gap:.25rem .9rem}
+.brand{font-weight:700;font-size:.95rem;color:#fff;white-space:nowrap}
+nav.gnav{display:flex;flex-wrap:wrap;gap:.15rem;margin-left:auto}
+nav.gnav a{color:#fffd;font-size:.82rem;padding:.25rem .55rem;border-radius:6px;white-space:nowrap}
+nav.gnav a:hover{background:#ffffff26;text-decoration:none}
+nav.gnav a.cur{background:#ffffff33;color:#fff;font-weight:700}
+.hero{background:linear-gradient(135deg,var(--acd),var(--ac));color:#fff;padding:3.2rem 1rem 2.8rem;text-align:center}
+.hero .icon{font-size:3rem;line-height:1}
+.hero h1{font-size:clamp(1.5rem,4vw,2.3rem);margin:.5rem 0 .3rem;letter-spacing:.04em}
+.hero p.tag{opacity:.92;font-size:1.02rem}
+.hero p.meta{opacity:.75;font-size:.82rem;margin-top:.9rem}
+main{max-width:var(--maxw);margin:0 auto;padding:2rem 1rem 4rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin:1.6rem 0 2.4rem}
+.card{background:#fff;border:1px solid #e3e6e0;border-left:6px solid var(--cac,var(--ac));border-radius:10px;
+ padding:1.1rem 1.2rem;box-shadow:0 1px 4px rgba(0,0,0,.05);transition:transform .15s,box-shadow .15s;display:block;color:inherit}
+.card:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(0,0,0,.1);text-decoration:none}
+.card .ci{font-size:1.7rem}
+.card h3{font-size:1.05rem;margin:.2rem 0 .3rem;color:var(--cac,var(--ac))}
+.card p{font-size:.86rem;color:#5a6660}
+section.ch{background:#fff;border:1px solid #e3e6e0;border-radius:12px;padding:1.6rem 1.7rem;margin:1.5rem 0;box-shadow:0 1px 4px rgba(0,0,0,.04)}
+section.ch>h2{font-size:1.3rem;color:var(--acd);border-left:8px solid var(--ac);padding:.15rem 0 .15rem .7rem;margin:0 0 1.1rem}
+section.ch h3{font-size:1.08rem;color:var(--acd);margin:1.5rem 0 .6rem;padding-bottom:.25rem;border-bottom:2px solid var(--acl)}
+section.ch h4{font-size:.98rem;color:#33413a;margin:1.1rem 0 .45rem}
+section.ch p{margin:.55rem 0}
+section.ch ul{margin:.55rem 0 .8rem 1.4rem}
+section.ch li{margin:.25rem 0}
+.tbl-wrap{overflow-x:auto;margin:.8rem 0 1.1rem}
+table{border-collapse:collapse;width:100%;font-size:.88rem;background:#fff}
+th,td{border:1px solid #d8ddd6;padding:.5rem .65rem;text-align:left;vertical-align:top}
+th{background:var(--acl);color:var(--acd);font-weight:700;white-space:nowrap}
+tr:nth-child(even) td{background:#f7f9f6}
+.callout{background:var(--acl);border-left:5px solid var(--ac);border-radius:8px;padding:.9rem 1.1rem;margin:.9rem 0;font-size:.92rem}
+.check{list-style:none;margin:.6rem 0 .9rem 0 !important}
+.check li{padding-left:1.9em;position:relative;margin:.4rem 0}
+.check li::before{content:"✅";position:absolute;left:0}
+.toc{background:#fff;border:1px solid #e3e6e0;border-radius:12px;padding:1.2rem 1.5rem;margin:1.5rem 0}
+.toc h2{font-size:1.05rem;color:var(--acd);margin-bottom:.6rem}
+.toc ol{margin-left:1.4rem}
+.toc a{font-size:.94rem}
+footer.site{background:#26302b;color:#c8d2cb;font-size:.8rem;text-align:center;padding:1.6rem 1rem;margin-top:2rem}
+footer.site a{color:#a8d5b8}
+.pagenav{display:flex;justify-content:space-between;gap:1rem;margin-top:2.2rem;flex-wrap:wrap}
+.pagenav a{background:#fff;border:1px solid #dfe3dd;border-radius:8px;padding:.6rem 1rem;font-size:.88rem}
+@media(max-width:640px){.nav-inner{padding:.5rem .6rem}.brand{font-size:.85rem}}
+
+:root{--ac:#1a5c3a;--acl:#e8f3ec;--acd:#0f3d26}</style>
+</head>
+<body>
+<header class="site"><div class="nav-inner">
+<a class="brand" href="index.html">🌾🌲🐟 農林水産業AI活用ガイドライン</a>
+<nav class="gnav"><a href="index.html" class="cur">ホーム</a><a href="kojin-nouka.html">個人農家</a><a href="nougyou-houjin.html">農業法人</a><a href="kojin-ringyou.html">個人林業</a><a href="ringyou-houjin.html">林業法人</a><a href="kojin-ryoushi.html">個人漁師</a><a href="gyogyou-houjin.html">漁業法人</a></nav>
+</div></header>
+<div class="hero"><div class="icon">📘</div><h1>農林水産業 AI活用ガイドライン</h1>
+<p class="tag">6業種比較・横断参照 — 中小事業者のための実践的活用指針</p>
+<p class="meta">Version 1.1 ｜ 2026年6月改訂 ｜ 中小事業者のための実践的活用指針</p></div>
+<main>
+<h2 style="font-size:1.25rem;color:var(--acd);margin-top:2rem">業種別ガイドライン</h2><div class="cards"><a class="card" style="--cac:#2e7d32" href="kojin-nouka.html"><span class="ci">🌾</span><h3>個人農家向けガイドライン</h3><p>スマホAI中心。低コスト・小さく始める。</p></a><a class="card" style="--cac:#2e7d32" href="nougyou-houjin.html"><span class="ci">🚜</span><h3>農業法人向けガイドライン</h3><p>経営戦略視点。複数領域・組織化。</p></a><a class="card" style="--cac:#6d4c2f" href="kojin-ringyou.html"><span class="ci">🌲</span><h3>個人林業向けガイドライン</h3><p>命を守るAI。共同利用が重要。</p></a><a class="card" style="--cac:#6d4c2f" href="ringyou-houjin.html"><span class="ci">🪵</span><h3>林業法人向けガイドライン</h3><p>LiDAR・川中・川下を含む統合戦略。</p></a><a class="card" style="--cac:#1565c0" href="kojin-ryoushi.html"><span class="ci">🎣</span><h3>個人漁師向けガイドライン</h3><p>暗黙知のデジタル化・安全。</p></a><a class="card" style="--cac:#1565c0" href="gyogyou-houjin.html"><span class="ci">🐟</span><h3>漁業法人向けガイドライン</h3><p>養殖×加工×輸出のデジタル統合。</p></a></div>
+<div class="toc"><h2>目次</h2><ol><li><a href="#sec1">はじめに — 本サマリー版の位置付け</a></li><li><a href="#sec2">第1章 業種別ガイドライン早見表</a></li><li><a href="#sec3">第2章 6業種共通のAI活用基本原則</a></li><li><a href="#sec4">第3章 業種別 主要AI活用領域 比較</a></li><li><a href="#sec5">第4章 規模別 投資・補助金活用パターン</a></li><li><a href="#sec6">第5章 業種横断 先行事例ハイライト</a></li><li><a href="#sec7">第6章 各業種ガイドラインへの索引</a></li><li><a href="#sec8">第7章 用語集と参考資料</a></li><li><a href="#sec9">おわりに</a></li></ol></div>
+<section class="ch" id="sec1"><h2>はじめに — 本サマリー版の位置付け</h2>
+<p>本サマリー版は、農林水産業の6業種 (個人農家・農業法人・個人林業・林業法人・個人漁師・漁業法人) 向けの個別AI活用ガイドラインを横断的に俯瞰し、相互比較・相互参照のための文書です。経営者・指導員・コンサルタント・行政担当者など、複数業種に関わる立場の方が一冊で全体像を把握できるよう構成しました。</p>
+<div class="callout">▼ この文書はこんな方におすすめ<br>・農林水産業を統括的にデジタル化したい行政・JA・漁協担当者<br>・地域おこし・6次産業化で複数業種に関わる経営者・コンサルタント<br>・他業種の事例を参考に自業種のヒントを探している事業者<br>・農林水産業×AIに投資・融資する金融機関・VC<br>・農林水産業×AIを研究する学術関係者・行政政策担当者</div>
+<p>個別の業種について深く知りたい場合は、対応するガイドライン (本シリーズの他5冊) を参照してください。本書では、業種を超えた共通点・差異・横断的なヒントを提示します。</p>
+</section>
+<section class="ch" id="sec2"><h2>第1章 業種別ガイドライン早見表</h2>
+<p>本シリーズの6つのガイドラインの位置付けを一覧で示します。自身の事業形態に最も近いものをメインに、関連業種を参考として活用することをおすすめします。</p>
+<div class="tbl-wrap"><table>
+<tr><th>No.</th><th>対象</th><th>アクセント色</th><th>コアメッセージ</th><th>想定分量</th></tr>
+<tr><td>1. 個人農家</td><td>個人・家族経営</td><td>緑</td><td>スマホAI中心。低コスト・小さく始める。</td><td>20p</td></tr>
+<tr><td>2. 農業法人</td><td>法人/規模拡大</td><td>緑</td><td>経営戦略視点。複数領域・組織化。</td><td>20p</td></tr>
+<tr><td>3. 個人林業</td><td>自伐型・小規模</td><td>茶</td><td>命を守るAI。共同利用が重要。</td><td>20p</td></tr>
+<tr><td>4. 林業法人</td><td>森林組合・素材生産業</td><td>茶</td><td>LiDAR・川中・川下を含む統合戦略。</td><td>20p</td></tr>
+<tr><td>5. 個人漁師</td><td>沿岸漁業者・小規模養殖</td><td>青</td><td>暗黙知のデジタル化・安全。</td><td>20p</td></tr>
+<tr><td>6. 漁業法人</td><td>水産加工含む</td><td>青</td><td>養殖×加工×輸出のデジタル統合。</td><td>20p</td></tr>
+</table></div>
+<h3>1.1 自分の事業に合うガイドラインの選び方</h3>
+<p>事業規模・組織形態・目的によって、メインのガイドラインと併読すべき周辺ガイドラインが変わります。以下の質問に当てはまる順にお選びください。</p>
+<ul>
+<li>Q1. 法人格を持っているか / 法人化を検討中 → 法人向け版が中心。個人版は補助参考。</li>
+<li>Q2. 6次産業化・複合経営 (例: 農業×加工、漁業×観光) → 関連業種の法人版2冊を併読。</li>
+<li>Q3. 新規参入・スタートアップ → 法人向け版+他業種事例で発想を広げる。</li>
+<li>Q4. 兼業・小規模 → 個人向け版が中心。生成AIや無料アプリの活用に集中。</li>
+<li>Q5. 後継者・若手育成が主目的 → 全業種共通の「暗黙知のデジタル化」項を重点的に。</li>
+</ul>
+</section>
+<section class="ch" id="sec3"><h2>第2章 6業種共通のAI活用基本原則</h2>
+<p>業種・規模を問わず、農林水産業の事業者がAIを活用する際に共通して守るべき10原則を整理します。経済産業省・総務省「AI事業者ガイドライン」、農林水産省「農業分野におけるAI・データに関する契約ガイドライン」を基礎としています。</p>
+<div class="tbl-wrap"><table>
+<tr><th>原則</th><th>概要</th></tr>
+<tr><td>1. 人間中心</td><td>AIはあくまで人間の意思決定を支える道具。最終判断は人間が責任をもつ。</td></tr>
+<tr><td>2. 安全性</td><td>AI・関連機器の動作不良に備え、緊急停止・人間介入手段を必ず確保。</td></tr>
+<tr><td>3. 公平性</td><td>学習データの偏りに注意し、特定の取引先・従業員・地域への不公平な扱いを避ける。</td></tr>
+<tr><td>4. プライバシー</td><td>個人情報保護法を遵守。収集目的を明確にし、不要な情報は集めない・残さない。</td></tr>
+<tr><td>5. セキュリティ</td><td>アクセス制御・初期パスワード変更・定期更新を徹底。フリーWi-Fi業務利用は避ける。</td></tr>
+<tr><td>6. 透明性</td><td>「なぜそう判断したか」を説明できるAIを優先選択。重大判断はAI根拠と人間確認を記録。</td></tr>
+<tr><td>7. 説明責任</td><td>AIで生じた損害・不利益の一次責任は事業者。ベンダーとの責任分界点を契約で明確化。</td></tr>
+<tr><td>8. データ品質・権利</td><td>AI精度はデータ品質次第。記録様式統一+データ帰属を契約書で明示。</td></tr>
+<tr><td>9. 環境配慮</td><td>再生可能エネルギー・低消費電力機器を選び、AI活用と環境配慮を両立。</td></tr>
+<tr><td>10. 継続的学習</td><td>AIは導入後の運用で精度向上。データ蓄積・定期検証・ベンダー更新を組み込む。</td></tr>
+</table></div>
+<h3>2.1 業種別 「特に重視すべき原則」マトリクス</h3>
+<p>10原則すべてが大切ですが、業種ごとに「特に重視すべき原則」は微妙に異なります。</p>
+<div class="tbl-wrap"><table>
+<tr><th>業種</th><th>最重要</th><th>次に重要</th><th>理由</th></tr>
+<tr><td>個人農家</td><td>8.データ</td><td>10.継続学習</td><td>暗黙知の蓄積が将来資産</td></tr>
+<tr><td>農業法人</td><td>7.説明責任</td><td>5.セキュリティ</td><td>出資者・金融機関・取引先への説明</td></tr>
+<tr><td>個人林業</td><td>2.安全性</td><td>9.環境配慮</td><td>労災最多業種・林業=環境価値</td></tr>
+<tr><td>林業法人</td><td>2.安全性</td><td>8.データ</td><td>労災ゼロと森林資源データの両立</td></tr>
+<tr><td>個人漁師</td><td>2.安全性</td><td>8.データ</td><td>海上安全・暗黙知のデジタル化</td></tr>
+<tr><td>漁業法人</td><td>9.環境配慮</td><td>2.安全性</td><td>MSC/ASC認証・労災管理</td></tr>
+</table></div>
+<p>ただし、「特に重視」とは「他原則を軽視してよい」という意味ではありません。10原則すべてが前提として守られたうえで、業種特性に応じた重み付けを意識する、ということです。</p>
+<h3>2.2 生成AI（ChatGPT等）利用時の権利・情報保護ルール</h3>
+<p>本節は、日本ディープラーニング協会（JDLA）「生成AIの利用ガイドライン（第1.1版）」を踏まえた留意点です。ポイントは『入力するとき』と『生成物を使うとき』を分けて考えることです。他人の著作物・他社のロゴや商標・著名人の肖像などは、入力する行為自体は原則として権利侵害になりませんが、個人情報やNDAで受け取った秘密情報は入力自体を避ける必要があります。権利侵害の多くは、生成物を公開・利用する段階で生じます。下表で①入力時②生成物利用時の順に確認してください。</p>
+<h4>■ ①情報を入力するとき ― 入力してよい情報／避ける情報</h4>
+<div class="tbl-wrap"><table>
+<tr><th>情報の種類</th><th>入力の可否</th><th>注意点（特にリスクとなる場面）</th></tr>
+<tr><td>① 他人の著作物</td><td>入力は原則OK（情報解析目的・著作権法30条の4）</td><td>入力した著作物に似た生成物を利用すると著作権侵害になり得る。著作物をデータベース化して人が読める形に整える等「享受」目的が併存する場合は30条の4が適用されないことがある（→②の表で確認）</td></tr>
+<tr><td>② 他社のロゴ・商標・意匠</td><td>入力自体は権利侵害にあたらない</td><td>生成物を商標的に使用したり、登録意匠に似たデザインとして利用すると商標権・意匠権の侵害になり得る（→②の表）</td></tr>
+<tr><td>③ 著名人の肖像・氏名</td><td>入力自体は権利侵害にあたらない</td><td>生成物の商用利用等でパブリシティ権・肖像権の侵害になり得る（→②の表）</td></tr>
+<tr><td>④ 個人情報</td><td>入力しない／匿名化する</td><td>本人の同意なく入力し学習に使われると個人情報保護法違反のおそれ（従業員・取引先・出荷先・顧客・組合員の氏名・住所・連絡先・口座情報）。海外サーバーは越境移転に該当</td></tr>
+<tr><td>⑤ NDA秘密情報</td><td>入力しない</td><td>取引先・メーカー・行政等から守秘義務付きで受領した情報の入力は、生成AI提供者（第三者）への開示となりNDA・守秘義務違反のおそれ</td></tr>
+<tr><td>⑥ 自社の営業秘密</td><td>入力しない</td><td>学習等で外部に漏れるおそれ（自社の生産/原価データ、栽培・施業・操業ノウハウ、未公表の事業計画）</td></tr>
+</table></div>
+<div class="callout">【対策】(a) 学習に使われない設定（オプトアウト）や法人向けプランを選ぶ　／<br>(b) 氏名・住所・固有名詞を伏字・匿名にしてから入力する　／<br>(c) 機微な情報を扱う作業では無料版を避ける</div>
+<h4>■ ②生成物（文章・画像）を使うとき ― 公開・利用の前に確認</h4>
+<div class="tbl-wrap"><table>
+<tr><th>確認ポイント</th><th>利用前にやること</th></tr>
+<tr><td>① 既存作品との類似</td><td>POP・ロゴ・キャッチコピー等は公開前に画像／文章検索で似ていないか確認</td></tr>
+<tr><td>② ロゴ・商品名に使う</td><td>J-PlatPat（特許情報プラットフォーム）で商標・意匠の先行登録を確認</td></tr>
+<tr><td>③ 商用利用する</td><td>各生成AIサービスの利用規約で商用利用の可否・権利の扱いを確認</td></tr>
+<tr><td>④ 著作権が生じない場合がある</td><td>AIが自動生成しただけの文章・画像は独占（他人の使用禁止）できないことがあると理解</td></tr>
+<tr><td>⑤ 権利侵害の有無</td><td>利用前に内容を点検（「知らなかった」では免責されない）</td></tr>
+<tr><td>⑥ 内容の正誤（ハルシネーション）</td><td>農薬・補助金・法令・出荷／安全基準などは公的情報や専門家で裏取り</td></tr>
+<tr><td>⑦ 規約・法令の遵守</td><td>最新の利用規約・法令・自主規制を定期的に確認</td></tr>
+</table></div>
+<p>判断に迷うときは、農業改良普及センター・JA・森林組合・漁業協同組合や、弁護士などの専門家に相談してください。原典：JDLA「生成AIの利用ガイドライン」 <a href="https://www.jdla.org/document/" target="_blank" rel="noopener">https://www.jdla.org/document/</a></p>
+</section>
+<section class="ch" id="sec4"><h2>第3章 業種別 主要AI活用領域 比較</h2>
+<p>6業種それぞれの「主要AI活用領域」を、共通の軸 (現場・サプライチェーン・人材・経営) で比較します。他業種の取り組みが自業種にも転用可能なケースが少なくないため、相互参照することで発想が広がります。</p>
+<h3>3.1 現場 × AI 比較</h3>
+<div class="tbl-wrap"><table>
+<tr><th>業種</th><th>現場AIの中核</th><th>代表的なツール例</th><th>費用感(個人/法人)</th></tr>
+<tr><td>農業</td><td>病害虫診断・自動運転農機・施肥最適化</td><td>xarvio、クボタ自動運転、ハーベスタAI</td><td>0~/数千万~</td></tr>
+<tr><td>林業</td><td>LiDAR森林調査・路網設計・AI木取り</td><td>日立システムズLiDAR、AI路網ソフト</td><td>受託数万/数千万~</td></tr>
+<tr><td>漁業</td><td>漁場予測・自動給餌・赤潮検知</td><td>JAMSTEC漁場AI、KDDI養殖システム</td><td>月千~/数百万~</td></tr>
+</table></div>
+<h3>3.2 サプライチェーン × AI 比較</h3>
+<div class="tbl-wrap"><table>
+<tr><th>業種</th><th>需要予測</th><th>出荷判断</th><th>販売チャネル拡大</th></tr>
+<tr><td>農業</td><td>JA・市場価格予測AI</td><td>AI需給予測</td><td>EC・直販・輸出AIサポート</td></tr>
+<tr><td>林業</td><td>木材市況予測AI</td><td>ログ品質AI判定</td><td>デジタル原木市場</td></tr>
+<tr><td>漁業</td><td>AI漁獲予測+市況予測</td><td>AI鮮度判定</td><td>EC直販+輸出書類AI</td></tr>
+</table></div>
+<h3>3.3 人材 × AI 比較</h3>
+<div class="tbl-wrap"><table>
+<tr><th>業種</th><th>人手不足の主因</th><th>AI活用での主解決策</th></tr>
+<tr><td>農業</td><td>重労働・季節変動</td><td>自動化機器+多言語eラーニング</td></tr>
+<tr><td>林業</td><td>重労働・労災・若手不足</td><td>AI見守り+VR訓練+デジタル化</td></tr>
+<tr><td>漁業</td><td>重労働・海難・後継者不在</td><td>AI見守り+暗黙知デジタル化</td></tr>
+</table></div>
+<h3>3.4 経営 × AI 比較</h3>
+<div class="tbl-wrap"><table>
+<tr><th>業種</th><th>経営AIの主用途</th><th>ROI が高い領域</th></tr>
+<tr><td>農業</td><td>AI会計+補助金AI支援</td><td>需給予測・販路マッチング</td></tr>
+<tr><td>林業</td><td>森林経営計画AI支援</td><td>J-クレジット申請AI</td></tr>
+<tr><td>漁業</td><td>AI操業日誌+輸出書類AI</td><td>AI赤潮検知 (被害回避型)</td></tr>
+</table></div>
+</section>
+<section class="ch" id="sec5"><h2>第4章 規模別 投資・補助金活用パターン</h2>
+<p>事業規模に応じた現実的なAI投資パターンと、活用すべき補助金を整理します。「自分の規模で何が現実的か」を確認するためのナビとしてご活用ください。</p>
+<div class="tbl-wrap"><table>
+<tr><th>売上規模</th><th>推奨投資額レンジ</th><th>現実的なAI活用</th><th>主たる補助金</th></tr>
+<tr><td>~1千万円 (個人・小規模)</td><td>0~50万円/年</td><td>スマホAIアプリ群、生成AI、AI会計、共同利用ドローン</td><td>小規模事業者持続化補助金 地域独自補助</td></tr>
+<tr><td>1千万~5千万円 (個人法人・中規模)</td><td>50~300万円/年</td><td>自動運転農機(エントリー型)、養殖IoTブイ、LiDAR受託、ドローン</td><td>ものづくり補助金 スマート農業/林業/水産業推進事業</td></tr>
+<tr><td>5千万~3億円 (法人・中堅)</td><td>300万~3,000万円/年</td><td>AI画像選別ライン、複数台自動運転農機、養殖統合システム</td><td>ものづくり補助金 省力化投資補助金</td></tr>
+<tr><td>3億円~ (法人・準大手)</td><td>3,000万円~/年</td><td>全工程デジタルトレース、AI研究開発、データ事業化</td><td>経済産業省・農水省連携事業 国際競争力強化</td></tr>
+</table></div>
+<h3>4.1 「年間50万円以下で何ができるか」 ─ 個人事業者向け即実践プラン</h3>
+<p>売上規模が比較的小さい個人事業者でも、年間50万円以下のAI投資で経営を大きく変えることができます。以下、6業種共通で推奨できる「最初の一歩」プランを示します。</p>
+<ul class="check">
+<li>AI会計ソフト (年額3万円程度) ─ 経理時間を年30~50時間削減</li>
+<li>生成AI (ChatGPT/Gemini無料~月2千円) ─ 文書作成・補助金下書きを大幅短縮</li>
+<li>業種特化スマホAIアプリ (病害虫診断/材積計測/漁場予測等) ─ 0~月千円程度</li>
+<li>AI気象予報アプリ (月千円程度) ─ 出漁・出役・防除判断の精度向上</li>
+<li>AI見守り (Apple Watch等の標準機能) ─ 既存スマホ・ウェアラブル活用</li>
+<li>クラウドストレージ (Google Drive/Dropbox等 月千円) ─ データのバックアップ習慣</li>
+<li>JA/漁協/森林組合のデジタルメンバー会員 ─ 大半は加入無料か低額</li>
+</ul>
+<h3>4.2 補助金活用の3原則</h3>
+<div class="callout">▼ 農林水産業 補助金活用 3つのコツ<br>① 早期準備 ─ 公募開始の3ヶ月以上前から情報収集と要件確認を始める<br>② 数値計画 ─ 「KPI=何を、どれだけ良くするか」を必ず数値で設定 (採択率に直結)<br>③ 専門家連携 ─ JA/漁協/森林組合・中小企業診断士・よろず支援拠点を活用</div>
+</section>
+<section class="ch" id="sec6"><h2>第5章 業種横断 先行事例ハイライト</h2>
+<p>全6ガイドラインに収録した30本以上の事例から、特に他業種にも応用できる注目事例を抜粋します。「自業種で試したら面白そうなアイデア」を見つける起点としてご活用ください。</p>
+<h3>暗黙知のデジタル化 (北海道奥尻町・漁業)</h3>
+<p>【概要】 ベテラン漁師の「勘」を海洋ブイ+AIで可視化し、若手・地域おこし協力隊員に技術継承。</p>
+<div class="callout">📌 他業種への応用 全業種で「ベテランの判断」を音声・画像・センサーで記録 → AIで形式知化、後継者教育へ</div>
+<h3>共同利用モデル (宮崎県諸塚村・林業)</h3>
+<p>【概要】 5戸の自伐型林家が機材・知識を共有し、個人では不可能な先進AIを実現。</p>
+<div class="callout">📌 他業種への応用 農業の集落営農、漁業の沿岸協同利用、林業の森林組合経由 ─ 共同利用は全業種で有効</div>
+<h3>被害回避型AI投資 (長崎県五島市・漁業赤潮検知)</h3>
+<p>【概要】 AI赤潮検知で被害ゼロ。1度の被害回避で投資額を一気に回収。</p>
+<div class="callout">📌 他業種への応用 農業の鳥獣害対策・霜害予測、林業の風倒被害早期検知など、リスク回避型投資の発想</div>
+<h3>若手後継者×AIで世代交代 (愛媛県・養殖+EC)</h3>
+<p>【概要】 若手後継者がAIマーケティングを内製化し、ブランド単価向上+世代交代に成功。</p>
+<div class="callout">📌 他業種への応用 「AI活用」を後継者・若手雇用のメッセージに。世代交代の象徴ツールに</div>
+<h3>輸出書類AI (鹿児島県ブリ養殖)</h3>
+<p>【概要】 生成AI翻訳+通関書類自動生成で輸出参入。語学障壁を低下。</p>
+<div class="callout">📌 他業種への応用 農産物・木材・水産物すべてで応用可能。中小事業者の海外進出を後押し</div>
+<h3>中山間地での効果最大化 (京都府・稲作)</h3>
+<p>【概要】 中山間地の散在圃場をスマホ1台で一元管理、見回り時間を80%減</p>
+<div class="callout">📌 他業種への応用 条件不利地ほどデジタルツールの効果が大きい ─ 林業・漁業の遠隔地活用にも</div>
+<h3>兼業者・副業者×AI (大分県・有機農家)</h3>
+<p>【概要】 本業会社員兼業の農家が、夜間・週末の経理時間をAIで1/5に。</p>
+<div class="callout">📌 他業種への応用 全業種の兼業・副業形態において、限られた時間を最大化するAI活用</div>
+<h3>公的セクターの代行 (中国地方・市町村森林公社)</h3>
+<p>【概要】 公社が小規模所有者の代行でAI活用、地域全体のデジタル化を推進。</p>
+<div class="callout">📌 他業種への応用 JA・漁協・組合・自治体が小規模事業者の代行を担うモデルは全業種で展開可能</div>
+<h3>認証取得×AI (山口県・水産加工)</h3>
+<p>【概要】 AIトレーサビリティでMSC認証取得・大手量販店との取引拡大。</p>
+<div class="callout">📌 他業種への応用 FSC/SGEC (林業)・GAP/有機JAS (農業)・MSC/ASC (漁業) の認証取得をAIで支援</div>
+<h3>VC調達×データ事業化 (関東圏・漁業スタートアップ)</h3>
+<p>【概要】 陸上養殖+完全AI制御で10億円調達。データ事業化も。</p>
+<div class="callout">📌 他業種への応用 農林水産業×AIスタートアップは投資家の注目度が高まりつつある</div>
+</section>
+<section class="ch" id="sec7"><h2>第6章 各業種ガイドラインへの索引</h2>
+<p>本シリーズの6つのガイドラインの主要ポイントを、章立てとともに索引化しました。「この話題はどのガイドラインに?」という参照に活用してください。</p>
+<div class="tbl-wrap"><table>
+<tr><th>話題</th><th>主に扱うガイドライン</th><th>参照箇所</th></tr>
+<tr><td>共通章</td><td>全6冊</td><td>第1章 (基本原則)・第5章 (補助金)・第6章 (リスク管理)・第7章 (用語集) は共通</td></tr>
+<tr><td>スマホAI活用</td><td>個人農家・林業・漁師</td><td>第2章で各業種特化のスマホアプリを紹介</td></tr>
+<tr><td>LiDAR・ドローン</td><td>個人林業・林業法人</td><td>第2章で詳細解説</td></tr>
+<tr><td>養殖管理AI</td><td>個人漁師・漁業法人</td><td>第2章で詳細解説</td></tr>
+<tr><td>AI画像選別・加工</td><td>農業法人・漁業法人</td><td>第2章で詳細解説</td></tr>
+<tr><td>生成AIの実務活用</td><td>全6冊</td><td>ChatGPT等の活用法は全冊で紹介</td></tr>
+<tr><td>1人作業の安全管理</td><td>個人林業・個人漁師</td><td>第6章で「命を守るAI活用」を詳解</td></tr>
+<tr><td>ガバナンス・経営戦略</td><td>農業法人・林業法人・漁業法人</td><td>第6章でリスクを取締役会観点で論じる</td></tr>
+<tr><td>スタートアップ的事業展開</td><td>農業法人・漁業法人</td><td>第3章で関連事例を紹介</td></tr>
+<tr><td>輸出・国際認証</td><td>農業法人・林業法人・漁業法人</td><td>第2章・第3章で参照</td></tr>
+<tr><td>6次産業化・観光連携</td><td>全法人版</td><td>第2章後半で各業種視点を提示</td></tr>
+</table></div>
+</section>
+<section class="ch" id="sec8"><h2>第7章 用語集と参考資料</h2>
+<h3>7.1 AI関連用語集</h3>
+<div class="tbl-wrap"><table>
+<tr><th>用語</th><th>意味</th></tr>
+<tr><td>AI (人工知能)</td><td>Artificial Intelligence。データから規則性を学習し、人間に代わって判断・予測を行う技術。</td></tr>
+<tr><td>機械学習</td><td>AIの一種。大量のデータからパターンを自動学習する技術。</td></tr>
+<tr><td>ディープラーニング</td><td>人間の脳を模した「ニューラルネットワーク」を多層化した学習手法。画像認識・音声認識に強い。</td></tr>
+<tr><td>生成AI</td><td>ChatGPTなどの代表例。文章・画像・音声を新規に生成できるAI。</td></tr>
+<tr><td>IoT</td><td>Internet of Things。センサー・機器をインターネットに接続し、データを自動収集する仕組み。</td></tr>
+<tr><td>クラウド</td><td>インターネット経由で提供される計算機資源・サービス。自社サーバ不要で利用できる。</td></tr>
+<tr><td>LiDAR (ライダー)</td><td>Light Detection and Ranging。レーザー光で対象物までの距離を高精度に計測する技術。</td></tr>
+<tr><td>GIS</td><td>Geographic Information System。地理情報システム。地図上にデータを可視化できる。</td></tr>
+<tr><td>GPS / GNSS</td><td>Global Positioning System / Global Navigation Satellite System。衛星測位システム。</td></tr>
+<tr><td>PoC</td><td>Proof of Concept。概念実証。本格導入前の小規模な実証実験。</td></tr>
+<tr><td>DX</td><td>Digital Transformation。デジタル技術を活用したビジネス・組織の変革。</td></tr>
+<tr><td>API</td><td>Application Programming Interface。ソフト同士の連携窓口。</td></tr>
+<tr><td>SLA</td><td>Service Level Agreement。サービス品質保証契約。</td></tr>
+<tr><td>暗黙知</td><td>言葉や数字で表しにくい、経験から得た知識・勘。AIはこれを可視化・継承する手段になる。</td></tr>
+</table></div>
+<h3>7.2 参考になる公的情報源</h3>
+<div class="tbl-wrap"><table>
+<tr><th>資料名</th><th>URL</th></tr>
+<tr><td>農林水産省 スマート農業ポータル</td><td><a href="https://www.maff.go.jp/j/kanbo/smart/" target="_blank" rel="noopener">https://www.maff.go.jp/j/kanbo/smart/</a></td></tr>
+<tr><td>農業分野におけるAI・データに関する契約ガイドライン</td><td><a href="https://www.maff.go.jp/j/kanbo/tizai/contract/" target="_blank" rel="noopener">https://www.maff.go.jp/j/kanbo/tizai/contract/</a></td></tr>
+<tr><td>林野庁 スマート林業の推進</td><td><a href="https://www.rinya.maff.go.jp/j/kaihatu/smart_ringyo/" target="_blank" rel="noopener">https://www.rinya.maff.go.jp/j/kaihatu/smart_ringyo/</a></td></tr>
+<tr><td>水産庁 スマート水産業</td><td><a href="https://www.jfa.maff.go.jp/j/kikaku/smart/" target="_blank" rel="noopener">https://www.jfa.maff.go.jp/j/kikaku/smart/</a></td></tr>
+<tr><td>経済産業省・総務省 AI事業者ガイドライン</td><td><a href="https://www.meti.go.jp/policy/mono_info_service/connected_industries/sharing_and_utilization/ai_guidelines.html" target="_blank" rel="noopener">https://www.meti.go.jp/policy/mono_info_service/connected_industries/sharing_and_utilization/ai_guidelines.html</a></td></tr>
+<tr><td>IT導入補助金</td><td><a href="https://www.it-hojo.jp/" target="_blank" rel="noopener">https://www.it-hojo.jp/</a></td></tr>
+<tr><td>ものづくり補助金</td><td><a href="https://portal.monodukuri-hojo.jp/" target="_blank" rel="noopener">https://portal.monodukuri-hojo.jp/</a></td></tr>
+<tr><td>中小企業庁 経営支援サイト</td><td><a href="https://www.chusho.meti.go.jp/" target="_blank" rel="noopener">https://www.chusho.meti.go.jp/</a></td></tr>
+<tr><td>スマート農業実証プロジェクト</td><td><a href="https://www.affrc.maff.go.jp/docs/smart_agri_pro/smart_agri_pro.htm" target="_blank" rel="noopener">https://www.affrc.maff.go.jp/docs/smart_agri_pro/smart_agri_pro.htm</a></td></tr>
+</table></div>
+<h3>7.3 改訂履歴</h3>
+<div class="tbl-wrap"><table>
+<tr><th>版数</th><th>発行日</th><th>主な変更点</th></tr>
+<tr><td>1.0</td><td>2026年5月</td><td>初版発行</td></tr>
+<tr><td>1.1</td><td>2026年6月</td><td>JDLA「生成AIの利用ガイドライン」に基づき「生成AI（ChatGPT等）利用時の権利・情報保護ルール」を追加。生成AIへの『入力の可否』と『生成物利用時の注意』を区別し（他人の著作物・商標・著名人の肖像等は入力自体は原則可、個人情報・NDA秘密情報は入力不可）、図表で整理。</td></tr>
+</table></div>
+</section>
+<section class="ch" id="sec9"><h2>おわりに</h2>
+<p>農林水産業は、日本の国土・食・文化・地域経済の根幹を支える基幹産業です。AI・デジタル技術は、これら一次産業を「重労働の現場」から「データドリブンな価値創造産業」へと転換させる強力な道具となります。本シリーズの7冊 (業種別6冊+本サマリー版) が、農林水産業に関わるあらゆる立場の方々の経営判断・支援活動・政策立案・研究にお役立ていただければ幸いです。「迷ったら、まず1つだけ試す」 ─ シンプルなこの一歩が、農林水産業の未来を拓きます。</p>
+<p>中小事業者向け AI活用ガイドライン</p>
+<p>2026年5月版</p>
+</section>
+<div class="pagenav"><span></span><a href="kojin-nouka.html">個人農家向け →</a></div>
+</main>
+<footer class="site">
+<p>農林水産業AI活用ガイドライン (Version 1.1 / 2026年6月)</p>
+<p>本サイトは経済産業省・総務省「AI事業者ガイドライン」、農林水産省「農業分野におけるAI・データに関する契約ガイドライン」、JDLA「生成AIの利用ガイドライン」等を参照して作成した中小事業者向けの実践指針です。</p>
+</footer>
+</body>
+</html>
